@@ -18,8 +18,8 @@ This plugin provide slideshow effect with images and html text.Content can be ch
 3. Go to admin section Settings > Slideshow and enter the following parameters Duration ,SlideShow Width,Image Height,Image Width,Enable Slideshow
 4. check the checkbox Enable Slideshow to work slide show.
 5. put [SLIDESHOW] in your post or pages.
-6. put '<div id="slideshow"><div id="seg1"></div><div id="seg2"></div></div>` in your code to display slideshow.
-6. To change content of `slideshow` goto `/wp-content/plugins/slideshow` directory open file `content.php`. you can change content of slide show here.
+6. put '[div id="slideshow"][div id="seg1"][/div][div id="seg2"][/div][/div]` in your code to display slideshow through code.Replace [ with < and ] with >
+7. To change content of `slideshow` goto `/wp-content/plugins/slideshow` directory open file `content.php`. you can change content of slide show here.
 
 == Screenshots ==
 
