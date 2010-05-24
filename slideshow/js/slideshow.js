@@ -13,11 +13,12 @@ var height =0;
 var imgwidth =0;
 var imgheight = 0;
 var onlyimages = 0;
+var base_url = "";
 $("#document").ready(
 function() {
 
 	var loader = new Image();
-	loader.src = "http://localhost/wordpress/wp-content/plugins/slideshow/loader.gif";
+	loader.src = base_url+"/wp-content/plugins/slideshow/loader.gif";
 	$("#seg2").html('<div align="center"><img src="'+loader.src+'" border="0" style="padding:10px;"></div>');
   	$("#seg1").css("height",imgheight+"px");
   	var position=$("#seg1").position();

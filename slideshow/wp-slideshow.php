@@ -93,7 +93,9 @@ function add_slideshowjs() {
 		print "imgwidth=".$imgwidth.";";
 		$onlyimages  = get_option('slideshow_only_images');
 		print "onlyimages='".$onlyimages."';";
+		print "base_url='".get_bloginfo("url")."';";		
 		print "content_url='".get_bloginfo("url")."?slideshow_content=1'";
+		
 		
 		print '</script>';
 	}
