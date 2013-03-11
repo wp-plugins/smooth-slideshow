@@ -13,9 +13,12 @@ This is a fade slideshow with movable text. after installing this plugin a new c
 
 == Installation ==
 
-1. Upload `slideshow` to `/wp-content/plugins/` directory
-2. Activate plugin through the 'Plugins' menu in WordPress
-3. Put this code on template file 	wp_slideshow::slideshow(); , where you want to display slideshow.
+1. Upload `slideshow` to `/wp-content/plugins/` directory.
+2. Activate plugin through the 'Plugins' menu in WordPress.
+3. after installation a new menu slides will be display in admin section.
+4. add news slides in slides content type.
+5. Put this code on template file 	wp_slideshow::slideshow(); , where you want to display slideshow.
+
 == Screenshots ==
 
 1. screenshot-1.png
