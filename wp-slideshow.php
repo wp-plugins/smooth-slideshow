@@ -2,13 +2,13 @@
 /**
  * @package Common
  * @author Faaiq Ahmed
- * @version 1.5.1
+ * @version 1.5.2
  */
 /*
 Plugin Name: Smooth Slideshow
 Description: Smooth Slideshow for wordpress.
 Author: Faaiq Ahmed, Sr Web Developer at Arcgate,faaiqsj@gmail.com
-Version: 1.5.1
+Version: 1.5.2
 Author URI: http://arcgate.com/#
 */
 
