@@ -15,7 +15,7 @@ This is a fade slideshow with movable text. after installing this plugin a new c
 
 1. Upload `slideshow` to `/wp-content/plugins/` directory
 2. Activate plugin through the 'Plugins' menu in WordPress
-3. Put this code on template file <?php	wp_slideshow::slideshow();?>, where you want to display slideshow.
+3. Put this code on template file 	wp_slideshow::slideshow(); , where you want to display slideshow.
 == Screenshots ==
 
 1. screenshot-1.png
