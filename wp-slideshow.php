@@ -7,9 +7,8 @@
 /*
 Plugin Name: Smooth Slideshow
 Description: Smooth Slideshow for wordpress.
-Author: Faaiq Ahmed, Sr Web Developer at Arcgate,faaiqsj@gmail.com
+Author: Faaiq, Technical Architect Php
 Version: 1.5.2
-Author URI: http://arcgate.com/#
 */
 
 class wp_slideshow {
@@ -21,6 +20,7 @@ class wp_slideshow {
    add_action('save_post', array($this,'save_post'),1,2);
    add_action('admin_menu',  array($this, 'adminmenu'));
    add_action('wp_head',  array($this, 'head'));
+			add_action('admin_head',  array($this, 'admin_head'));
 			register_activation_hook(__FILE__, array(&$this,'install'));
    register_deactivation_hook(__FILE__, array(&$this,'uninstall'));
  }
@@ -160,6 +160,7 @@ function slideshow( ) {
 		?>
 		<div id="wrap">
 		<h1>Sideshow Settings</h1>
+			
 			<form method="post">
 				<table width="100%" cellpadding="5" cellspacing="0" border="0">
 					<tr>
@@ -182,6 +183,9 @@ function slideshow( ) {
 				<input type="submit" value="submit" class="button-primary">
 			</form>
 		</div>
+		<p></p>
+		Help Us, Like Us
+		<div class="fb-like" data-href="http://www.facebook.com/pages/Wordpress-Expert/105504792973227" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 		
 		<?php
 		
@@ -233,8 +237,20 @@ function slideshow( ) {
  function head() {
   wp_enqueue_style("wp-slideshow.css",plugins_url('wp-slideshow.css',__FILE__));
   wp_enqueue_script("wp-slideshow.js",plugins_url('wp-slideshow.js',__FILE__));
+		
  }
-	
+ function admin_head() {
+		?>
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+				fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+		<?php
+ }	
 	
 	function install() {
     global $wpdb;
